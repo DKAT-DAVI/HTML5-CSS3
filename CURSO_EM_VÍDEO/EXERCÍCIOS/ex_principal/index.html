@@ -35,7 +35,7 @@
         &#x1F4BB
     </p>
     <hr>
-    <h2>A tag im em HTML5</h2>
+    <h2>A tag img em HTML5</h2>
     <p>Abaixo você vai ver uma imagem que está na mesma pasta.</p>
     <img src="imagens/html5-logo-200.png" alt="Logo-HTML5">
     <p>Podemos também carregar imagens que estão em sub-pastas.</p>
@@ -69,6 +69,144 @@
     <h4>Os regimes territorias especiais</h4>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil beatae at in nesciunt unde quisquam ipsam fugit laudantium ex qui sunt, voluptates facere dolorum numquam placeat alias quos, doloribus debitis.</p>
     <hr>
-    <p>DKAT</p>
+    <h1>Formatação de Textos</h1>
+    <h2>Principais Formatações</h2>
+    <h3>Negrito / Destaque</h3>
+    <p>Nessa frase foi usado o <b>negrito</b> utilizando a tag &lt;b&gt; (sem semântica).</p>
+    <p>Nessa frase foi usado o <strong>negrito</strong> utilizando a tag &lt;strong&gt; (semântico).</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase temos <i>um termo em itálico</i> usando a tag &lt;i&gt; (sem semântica).</p>
+    <p>Nesta frase temos um <em>termo em itálico</em> utilizando a tag &lt;em&gt; (semântico).</p>
+    <h2>Formatações Adicionais em HTML</h2>
+    <h3>Texto Marcado</h3>
+    <style>
+        mark{
+            background-color: aquamarine;
+        }
+    </style>
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag &lt;mark&gt;</p>
+    <p>E no outro parágrafo, temos <mark>outro texto marcado.</mark></p>
+    <h2>Texto grande e texto pequeno</h2>
+    <p>Estamos criando <big>um texto grande</big> e <small>um texto pequeno</small> neste parágrafo. Tags usadas <strong>&lt;big&gt;</strong> e <strong>&lt;small&gt;</strong>.</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.<br>Tag &lt;del&gt;.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.<br>Tag &lt;ins&gt;.</p>
+    <p>Existe também o <u>sublinhado</u> com a tag &lt;u&gt; (sem semântica).</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3 usando a tag &lt;sup&gt;.</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O usando a tag &lt;sub&gt;.</p>
+    <h2>Outras Formatações</h2>
+    <h2>Código Fonte/Pré-formatação</h2>
+    <p>O comando <code>print('Hello World')</code> é escrito em python usando a tag &lt;code&gt;</p>
+    <p>A tag &lt;pre&gt; faz a identação/organização do texto como um código.</p>
+    <p>Sem usar o &lt;pre&gt;:</p>
+    <code>
+        num = int(input('Digite um número: '))
+        if num % 2 == 0:
+            print(f'O número {num} é par')
+        else:
+            print(f'O número {num} é ímpar')
+    </code>
+    <p>Usando o &lt;pre&gt;:</p>
+    <pre>
+        <code>
+    num = int(input('Digite um número: '))
+    if num % 2 == 0:
+        print(f'O número {num} é par')
+    else:
+        print(f'O número {num} é ímpar')
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p>
+    <p>Utiliza-se a tag &lt;q&gt;.</p>
+    <h2>Citações completas</h2>
+    <p>Segundo Bradley L. Jones em seu livro Teach Yourself:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Sams_Teach_Yourself_C_in_21_Days/XWRgyqTnfBYC?hl=en&gbpv=1&dq=c%23&printsec=frontcover">
+        To use variables in your C# programs, you know how to create a variable names. In C#, variable names must adhere to the following rules:
+    </blockquote>
+    <p>Usando a tag &lt;blockquote&gt; e também o parâmetro <i>cite</i>.</p>
+    <h2>Abreviações</h2>
+    <p>Estou estudanto <abbr title="Hyper Text Markup Language">HTML5</abbr> e <abbr title="Cascading Style Sheets">CSS3</abbr>.</p>
+    <p>Usando a tag &lt;abbr&gt; e o parâmetro <i>title</i> para adicionar um título/legenda para a abreviação.</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Criando um texto invertido</bdo></p>
+    <p>Usando a tag &lt;bdo&gt; e definindo no parâmetro a direção que o texto será invertido.</p>
+    <hr>
+    <h1>Listas em HTML</h1>
+    <h2>Ordered Lists</h2>
+    <p>Todas as listas onde a ordem dos intens é algo muito importante: Um passo-a-passo para fazer um bolo, uma lista de aprovados, uma lista de de chamada...</p>
+    <p>Para criar uma ordered list, usamos a tag &lt;ol&gt; (ordered list) e para delimitar a lista &lt;li&gt; (list item) para identificar cada item da lista.</p>
+    <p>A partir do HTML5 a tag &lt;li&gt; tem fechamento &lt;/li&gt; opcional</p>
+    <ol>
+        <li>Item 1      
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+    <p>A tag &lt;ol&gt; possui o parâmetro <strong>type</strong> para definir o tipo de marcador da lista:</p>
+    <p>Você também pode indicar com qual número ou parâmetro irá iniciar a contagem usando o parâmetro <strong>start</strong></p>
+    <ol type="1" start="11">
+        <li> 1 - Valor padrão. Cria listas numeradas. Ex: 1, 2, 3, 4, …</li>
+        <li> A - Cria listas alfabéticas em maiúsculas. Ex: A, B, C, D, …</li>
+        <li> a - Cria listas alfabéticas em minúsculas. Ex: a, b, c, d, …</li>
+        <li> I - Cria listas com algarismos romanos em maiúsculas. Ex: I, II, III, IV, …</li>
+        <li> i - Cria listas com algarismos romanos em minúsculas. Ex: i, ii, iii, iv, … </li>
+    </ol>
+    <h2>Unordered lists</h2>
+    <p>Também chamadas de listas com marcadores, aquelas que a ordem dos item não influencia no significado da lista. Maneira para organizar itens que não apresentam uma classificação necessáriamente.</p>
+    <p>Para criar uma unordered lists usamos a tag &lt;ul&gt; (unordered lists) e a tag &lt;li&gt; para criar cada um dos seus itens internos.</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    <p>O marcador padrão é o <i>circle</i>, a bolinha preta totalmente preenchida, mas existe o parâmetro <strong>type</strong> com os seguintes valores:</p>
+        <ul type="square">
+            <li>disc - padrão. Uma bola preta totalmente pintada</li>
+            <li>circle - Uma bola com uma borda preta e sem preenchimento</li>
+            <li>square - Um pequeno quadrado preto totalmente pintado</li>
+        </ul>
+    <h2>Listas Mistas</h2>
+    <p>Podemos também criar listas mistas</p>
+    <ul type="circle">
+        <li>Tópico 1</li>
+        <ul type="disc">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <li>Tópico 2</li>
+        <ul type="disc">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <li>Tópico 3</li>
+        <ul type="disc">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </ul>
+    <p>A lista interna é uma sub-lista, por isso está deslocada para a direita.</p>
+    <h2>Listas de Definições</h2>
+    <p>Como se fosse um dicionário, temos os termos e suas desrcrições, lista sem demarcadores, mas bem útil em alguns casos.</p>
+    <p>Para criar a lisa usa-se a tag &lt;dl&gt; (definition list), cada termo é um &lt;dt&gt; (definition term) e cada descrição é um &lt;dd&gt; (definition description).</p>
+    <dl>
+        <dt><abbr title="Hyper Text Markup Language">HTML</abbr></dt>
+        <dd>Linguagem de marcação para criar o conteúdo de sites.</dd>
+        <dt><abbr title="Cascating Style Sheets">CSS</abbr></dt>
+        <dd>Linguagem de marcação para especificação de estilos em sites.</dd>
+        <dt>Javascript</dt>
+        <dd>Linguagem de programação para criar interatividade em sites.</dd>
+    </dl>
+    <hr>
+    <p><strong><em><mark style="background-color: rgb(109, 123, 255);">DKAT</mark></em></strong></p>
 </body>
 </html>
