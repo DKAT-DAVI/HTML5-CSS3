@@ -207,6 +207,72 @@
         <dd>Linguagem de programação para criar interatividade em sites.</dd>
     </dl>
     <hr>
+    <h2>Usando links externos</h2>
+    <p>Para criar um hyperlink, devemos criar âncoras através da tag <strong>&lt;a&gt;</strong>. O principal atributo dessa tag é o <strong>href</strong>, que cria uma referência hipertexto.</p>
+    <p>Usando a tag de hipertexto:</p>
+    <a href="https://github.com/DKAT-DAVI">Meu perfil do GitHub</a>
+    <p>Dentro do atributo <strong>href</strong>, colocamos a URL para outro site.</p>
+    <p>Outro atributo bem útil da tag de âncora é o hreflang, que permite indicar qual é o
+    idioma principal do site para onde o link está desviando o fluxo de navegação. Isso vai
+    permitir avisar ao navegador e a softwares de tradução como lidar caso o visitante
+    opte por traduzir automaticamente os conteúdos.<p>
+    <a href="https://www.w3schools.com/html/"hreflang="en">Site da W3Schools (em Inglês)</a>
+    <p>Podemos controlar como o link irá abrir, usando o atributo <strong>target</strong> com os seguintes valores:</p>
+    <ul type="disc">
+        <li><strong>_blank</strong> vai abrir o link em uma nova janela em branco. <a href="https://github.com/DKAT-DAVI" target="_blank" rel="external">Meu perfil do GitHub.</a></li>
+
+        <li><strong>_self</strong> vai abrir o link na janela ou frame atual (padrão).<a href="https://github.com/DKAT-DAVI" target="_self" rel="external">Meu perfil do GitHub.</a></li>
+
+        <li><strong>_top</strong> vai desfazer todos os frames e abrir o destino no navegador completo. <a href="https://github.com/DKAT-DAVI" target="_top" rel="external">Meu perfil do GitHub.</a></li>
+
+        <li><strong>_parent</strong> similar ao uso do _top em uma referência à janela mãe.<a href="https://github.com/DKAT-DAVI" target="_parent" rel="external">Meu perfil do GitHub.</a></li>
+
+        <li>nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir.</li>
+    </ul>
+    <p>Existe um recurso bem interessante para links que é indicar qual é a natureza do destino usando o atributo rel. Esse atributo aceita vários valores, entre eles vou citar: </p>
+    <ul type="disc">
+        <li><strong>next</strong> indica que o link é para a próxima parte do documento atual.</li>
+        <li><strong>prev</strong> indica que o link é para a parte anterior do documento atual.</li>
+        <li><strong>author</strong> indica que é um link para o site do autor do artigo atual.</li>
+        <li><strong>external</strong> indica que é um link para outro site que não faz parte do site.</li>
+    </ul>
+    <p>Existe um recurso para para indicar a origem do link, utilizando a tag <strong>&lt;rel&gt;</strong>. Essa tag aceita os seguintes atributos.</p>
+    <ul>
+        <li><strong>next</strong> indica que o link é para a próxima parte do documento atual.</li>
+        <li><strong>prev</strong> indica que o link é para a parte anterior do documento atual.</li>
+        <li><strong>author</strong> indica que é um link para o site do autor do artigo atual.</li>
+        <li><strong>external</strong> indica que é um link para outro site que não faz parte do site atual.</li>
+        <li><strong>nofollow</strong> indica que é um link para um site não endossado, como um link pago.</li>
+    </ul>
+    <hr>
+    <h2>Usando links Internos</h2>
+    <a href="helloWorld.html" target="_self" rel="next">
+        <p>Página <strong>Hello World</strong> em HTML.</p>
+    </a>
+    <p>Curso oferecido pelo <a href="https://www.cursoemvideo.com/" target="_blank" rel="nofollow">Curso em Vídeo</a>.</p>
+    </p>Abrindo um link interno dentro de outra pasta <a href="ex_001/helloWorld.html" target="_self" rel="next">Página Hello World</a>.<p>
+    <h2>Links para Downloads</h2>
+    <p>Para usar links de downloads, basta fazer o link diretamente para o arquivo que se deseja efetuar o download e adicionar o atributo download com o valor configurado para o nome do arquivo a ser baixado e o atributo type para indicar ao navegador que tipo de arquivo está sendo baixado. </p>
+    <ul>
+        <li><a href="pdfAula10/10 - Ligações em toda parte.pdf" download="pdfAula10.pdf" type="application/pdf">Baixar arquivo PDF</a></li>
+        <li><a href="pdfAula10/pdfAula10.zip" download="pdfAula10.zip" type="application/zip">Arquivo .zip</a></li>
+    </ul>
+    <p>Aqui vão alguns media types bem usados no nosso dia-a-dia:</p>
+    <ul type="circle">
+        <li>application/zip</li> 
+        <li>text/html</li>
+        <li>text/css</li>
+        <li>text/javascript </li>
+        <li>video/mp4</li>
+        <li>video/H264</li>
+        <li>video/JPEG</li>
+        <li>audio/aac</li>
+        <li>audio/mpeg</li>
+        <li>font/ttf</li>
+        <li>image/jpeg</li>
+        <li>image/png </li>
+    </ul>
+    <hr>
     <p><strong><em><mark style="background-color: rgb(109, 123, 255);">DKAT</mark></em></strong></p>
 </body>
 </html>
