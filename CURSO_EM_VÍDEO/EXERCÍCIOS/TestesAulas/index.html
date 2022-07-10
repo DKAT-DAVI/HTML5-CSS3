@@ -273,6 +273,38 @@
         <li>image/png </li>
     </ul>
     <hr>
+    <h1>Imagens dinâmicas, áudio e vídeo</h1>
+    <h2>Imagens Flexíveis</h2>
+    <p>Usa-se as tags &lt;picture&gt; e &lt;source&gt; para dimensionar as imagens de acordo com o tamanho da tela do dispositivo atual.</p>
+    <p>
+    <pre>
+    &lt;picture&gt;
+        &lt;source  media="(mas-width: 1050px)" srcset="foto-m.png" type="image/png"&gt;
+        &lt;img src="foto-g.png" alt="A imagem flexível funciona"&gt;
+    &lt;/picture&gt;
+    </pre>
+    </p>
+
+    <p>A tag source possui 3 atributos: 
+    <ul>
+        <li>
+            <b>type</b> vai indicar o media type da imagem que usamos.
+        </li>
+        <li>
+            <b>srcset</b> vai configurar o nome da imagem que será carregada quando o tamanho indicado for atingido.
+        </li>
+        <li>
+            <b>media</b> indica o tamanho máximo a ser considerado para carregar a imagem.
+        </li>
+    </ul>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens-flexíveis/Imagem-p.png" type="image/png">
+        <source media="(max-width: 950px)" srcset="imagens-flexíveis/Imagem-m.png" type="image/png">
+        <img src="imagens-flexíveis/Imagem-g.png" alt="imagemTeste">
+    </picture>
+    </p>
+
+    <hr>
     <p><strong><em><mark style="background-color: rgb(109, 123, 255);">DKAT</mark></em></strong></p>
 </body>
 </html>
