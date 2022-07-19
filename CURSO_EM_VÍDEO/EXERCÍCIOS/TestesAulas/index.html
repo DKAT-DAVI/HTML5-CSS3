@@ -303,7 +303,65 @@
         <img src="imagens-flexíveis/Imagem-g.png" alt="imagemTeste">
     </picture>
     </p>
-
+    <hr>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+    <!--MP3 WAV OGG-->
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="mida/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Seu navegador não possui compatibilidade com áudios. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo.</a></p>
+    </audio>
+    <p>Para reproduzir um áudio usamos a tag &lt;audio&gt; e alguns parâmetros.</p>
+    <p>
+        <code>
+            &lt;audio src="midia/happy-mistake.mp3" controls autoplay&gt;&lt;/audio&gt;
+        </code>
+    </p>
+    <img height="150em" src="midia/tag_audio.png" alt="tag_audio">
+    <p>Usa-se a tag &lt;audio&gt; com os sources na ordem de carregamento certa e o atributo <b>type</b> para o tipo de áudio usado.</p>
+    <p>
+        o atributo <b>preload</b> indica se o áudio será pré-carregado ou não e aceita três
+        valores:
+        <ul>
+            <li>
+                <b>metadata:</b> vai carregar apenas as informações sobre o arquivo (tamanho,
+                tempo, informações de direitos, etc).
+            </li>
+            <li>
+                <b>none:</b> não vai carregar absolutamente nada até que o usuário clique no botão
+                play ou um script inicie a reprodução.
+            </li>
+            <li>
+                <b>auto (padrão):</b> vai carregar o arquivo de áudio inteiro assim que a página for carregada, mesmo que o usuário nunca aperte o play.
+            </li>
+        </ul>
+    </p>
+    <p>
+        O atributo <b>controls</b> apresenta o player na tela.
+    </p>
+    <p>
+        O atributo <b>autoplay</b>, quando inserido, vai iniciar a reprodução do áudio assim que
+        a página for carregada.
+    </p>
+    <p>
+        O atributo <b>loop</b> vai fazer com que o áudio seja repetido eternamente assim que
+        terminar a sua reprodução.
+    </p>
+    <hr>
+    <h1>Reproduzindo Vídeos</h1>
+    <h2>Iserindo vídeos hospedados localmente</h2>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="600px" poster="midia/limoes-capa.png" controls autoplay>
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.ogx" type="video/ogg">
+        <p>infelizmente seu navegador não conseguiu carregar o vídeo.</p>
+    </video>
+    <h2>Inserindo vídeos do Youtube</h2>
+    <iframe width="600" height="315" src="https://www.youtube.com/embed/DjOSM72cYac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <hr>
     <p><strong><em><mark style="background-color: rgb(109, 123, 255);">DKAT</mark></em></strong></p>
 </body>
